@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+    @@include('head.html', {"page": "home", "plugins": ["swiper-bundle.min","magnific-popup"]})
+
+<body class="font-poppins text-dark text-sm leading-loose">
+    <!-- Header start -->
+  
+    <header id="sticky-header">
+        @@include('header/header-one.html')
+    </header>
+
+    @@include('search-form/index.html')
+    @@include('offcanvas/index.html')
+    @@include('offcanvas-cart/index.html')
+
+    <!-- Header end -->
+
+
+    <!-- Breadcrumb section start -->
+    @@include('breadcrumb/index.html',{
+        "link": "Your compare page",
+
+    })
+    <!-- Breadcrumb section end -->
+    
+
+<div class="py-24">
+    
+    <div class="container">
+        <div class="grid grid-cols-1 gap-x-5">
+            <div class="overflow-x-auto">
+                <table class="table w-full min-w-max">
+                  <thead>
+                      <tr>
+                          <th class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">product info</th>
+                          <th class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">
+                              <img class="w-40 block mx-auto mb-4" src="assets/images/single-product/lg/product1.webp" alt="product image">
+                              <span class="block mb-4">Birpod product unsde</span>
+                              <a href="#" class="inline-block bg-dark leading-none py-4 px-5 text-sm text-white transition-all hover:bg-orange uppercase font-semibold hover:text-white">add to cart</a>
+                          </th>
+                          <th class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">
+                              <img class="w-40 block mx-auto mb-4" src="assets/images/single-product/lg/product2.webp" alt="product image">
+                              <span class="block mb-4">Airp Variable product</span>
+                              <a href="#" class="inline-block bg-dark leading-none py-4 px-5 text-sm text-white transition-all hover:bg-orange uppercase font-semibold hover:text-white">add to cart</a>
+                          </th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">Price</th>
+                          <td class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">
+                              <span class="whish-list-price"> $38.24 </span>
+                          </td>
+                          <td class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">
+                              <span class="whish-list-price"> $38.24 </span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">Description</th>
+                          <td class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">
+                              <p>3 Tier Wood With Metal Shelf</p>
+                          </td>
+                          <td class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">
+                              <p>68in. Bronze Metal Coat Rack</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">Availability</th>
+                          <td class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">
+                              <span class="badge bg-success">In Stock</span>
+                          </td>
+                          <td class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">
+                              <span class="badge bg-success">In Stock</span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">weight</th>
+                          <td class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">500 ml</td>
+                          <td class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">400 ml</td>
+                      </tr>
+                      <tr>
+                          <th class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">colors</th>
+                          <td class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">3</td>
+                          <td class="p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">4</td>
+                      </tr>
+                  </tbody>
+              </table>
+
+              </div>
+        </div>
+    </div>
+
+</div>
+
+
+    <!-- Footer section start -->
+        <footer>
+
+            <!-- News Letter section start -->
+            <div class="news-letter-section bg-gray-100 pt-24 pb-24">
+                <div class="container">
+                    @@include('news-letter/index.html')
+                </div>
+            </div>
+            <!-- News Letter section end -->
+            
+            <!-- Footer Bottom Section start -->
+            <div class="footer-bottom-section py-8 bg-gray-500">
+                <div class="container">
+                    @@include('footer-bottom/index.html')
+                </div>
+            </div>
+            <!-- Footer Bottom Section end -->
+
+        </footer>
+    <!-- Footer section end -->
+
+    <a id="scrollUp" class="w-12 h-12 rounded-full bg-orange text-white fixed right-5 bottom-16 flex flex-wrap items-center justify-center transition-all duration-300 z-10" href="#" aria-label="scroll up"><i class="icon-arrow-up"></i></a>
+
+    <!-- Modals -->
+    @@include('modal/index.html')
+    @@include('modal/index2.html')
+
+    @@include('scripts.html', {"page": "home", "plugins": ["swiper-bundle.min","popper.min","tippy-bundle.umd.min","jquery.magnific-popup.min","jquery.ajaxchimp.min"]})
+
+  
+
+</body>
+
+</html>

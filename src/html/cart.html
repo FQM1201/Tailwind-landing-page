@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+    @@include('head.html', {"page": "home", "plugins": ["swiper-bundle.min","magnific-popup"]})
+
+<body class="font-poppins text-dark text-sm leading-loose">
+    <!-- Header start -->
+  
+    <header id="sticky-header">
+        @@include('header/header-one.html')
+    </header>
+
+    @@include('search-form/index.html')
+    @@include('offcanvas/index.html')
+    @@include('offcanvas-cart/index.html')
+
+    <!-- Header end -->
+
+
+    <!-- Breadcrumb section start -->
+    @@include('breadcrumb/index.html',{
+        "link": "Your Shopping Cart",
+
+    })
+    <!-- Breadcrumb section end -->
+    
+
+<div class="py-24">
+    
+    <div class="container">
+        <div class="grid grid-cols-1 gap-x-5">
+            <div class="overflow-x-auto">
+                <table class="w-full min-w-max">
+                  <thead>
+                    <tr>
+                      <th class="bg-gray-300 p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">Image</th>
+                      <th class="bg-gray-300 p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">Product</th>
+                      <th class="bg-gray-300 p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">Price</th>
+                      <th class="bg-gray-300 p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">Quantity</th>
+                      <th class="bg-gray-300 p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">Total</th>
+                      <th class="bg-gray-300 p-3 border border-solid border-gray-600 text-center font-medium text-sm capitalize">Remove</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                    <tr>
+                      <td class="w-32 p-3 border border-solid border-gray-600 text-center">
+                          <a href="#">
+                          <img src="assets/images/single-product/sm/product1.webp" alt="product image"></a>
+                        </td>
+                      <td class="p-3 border border-solid border-gray-600 text-center">
+                        <a href="#" class="transition-all hover:text-orange">Birpod product unsde</a><span>m / gold</span>
+                      </td>
+                      <td class="p-3 border border-solid border-gray-600 text-center"><span><span>$80.00</span></span></td>
+                      <td class="p-3 border border-solid border-gray-600 text-center">
+                       
+                        <div class="flex count border border-solid border-gray-300 p-2 h-11">
+                            <button class="decrement flex-auto w-5 leading-none" aria-label="button">-</button>
+                            <input type="number" min="1" max="100" step="1" value="1" class="quantity__input flex-auto w-8 text-center focus:outline-none input-appearance-none">
+                            <button class="increment flex-auto w-5 leading-none" aria-label="button">+</button>
+                        </div>
+                    </td>
+                      <td class="p-3 border border-solid border-gray-600 text-center"><span>$80.00</span></td>
+                      <td class="p-3 border border-solid border-gray-600 text-center">
+                        <a href="#" class="inline-block mx-1 hover:text-orange transition-all"><i class="icon-pencil"></i></a>
+                        <a href="#" class="inline-block mx-1 hover:text-orange transition-all"><i class="icon-close"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="w-32 p-3 border border-solid border-gray-600 text-center">
+                          <a href="#">
+                          <img src="assets/images/single-product/sm/product2.webp" alt="product image"></a>
+                        </td>
+                      <td class="p-3 border border-solid border-gray-600 text-center">
+                        <a href="#" class="transition-all hover:text-orange">Birpod product unsde</a><span>m / gold</span>
+                      </td>
+                      <td class="p-3 border border-solid border-gray-600 text-center"><span><span>$80.00</span></span></td>
+                      <td class="p-3 border border-solid border-gray-600 text-center">
+                       
+                        <div class="flex count border border-solid border-gray-300 p-2 h-11">
+                            <button class="decrement flex-auto w-5 leading-none" aria-label="button">-</button>
+                            <input type="number" min="1" max="100" step="1" value="1" class="quantity__input flex-auto w-8 text-center focus:outline-none input-appearance-none">
+                            <button class="increment flex-auto w-5 leading-none" aria-label="button">+</button>
+                        </div>
+                    </td>
+                      <td class="p-3 border border-solid border-gray-600 text-center"><span>$80.00</span></td>
+                      <td class="p-3 border border-solid border-gray-600 text-center">
+                        <a href="#" class="inline-block mx-1 hover:text-orange transition-all"><i class="icon-pencil"></i></a>
+                        <a href="#" class="inline-block mx-1 hover:text-orange transition-all"><i class="icon-close"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="w-32 p-3 border border-solid border-gray-600 text-center">
+                          <a href="#">
+                          <img src="assets/images/single-product/sm/product3.webp" alt="product image"></a>
+                        </td>
+                      <td class="p-3 border border-solid border-gray-600 text-center">
+                        <a href="#" class="transition-all hover:text-orange">Birpod product unsde</a><span>m / gold</span>
+                      </td>
+                      <td class="p-3 border border-solid border-gray-600 text-center"><span><span>$80.00</span></span></td>
+                      <td class="p-3 border border-solid border-gray-600 text-center">
+                       
+                        <div class="flex count border border-solid border-gray-300 p-2 h-11">
+                            <button class="decrement flex-auto w-5 leading-none" aria-label="button">-</button>
+                            <input type="number" min="1" max="100" step="1" value="1" class="quantity__input flex-auto w-8 text-center focus:outline-none input-appearance-none">
+                            <button class="increment flex-auto w-5 leading-none" aria-label="button">+</button>
+                        </div>
+                    </td>
+                      <td class="p-3 border border-solid border-gray-600 text-center"><span>$80.00</span></td>
+                      <td class="p-3 border border-solid border-gray-600 text-center">
+                        <a href="#" class="inline-block mx-1 hover:text-orange transition-all"><i class="icon-pencil"></i></a>
+                        <a href="#" class="inline-block mx-1 hover:text-orange transition-all"><i class="icon-close"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="w-32 p-3 border border-solid border-gray-600 text-center">
+                          <a href="#">
+                          <img src="assets/images/single-product/sm/product4.webp" alt="product image"></a>
+                        </td>
+                      <td class="p-3 border border-solid border-gray-600 text-center">
+                        <a href="#" class="transition-all hover:text-orange">Birpod product unsde</a><span>m / gold</span>
+                      </td>
+                      <td class="p-3 border border-solid border-gray-600 text-center"><span><span>$80.00</span></span></td>
+                      <td class="p-3 border border-solid border-gray-600 text-center">
+                       
+                        <div class="flex count border border-solid border-gray-300 p-2 h-11">
+                            <button class="decrement flex-auto w-5 leading-none" aria-label="button">-</button>
+                            <input type="number" min="1" max="100" step="1" value="1" class="quantity__input flex-auto w-8 text-center focus:outline-none input-appearance-none">
+                            <button class="increment flex-auto w-5 leading-none" aria-label="button">+</button>
+                        </div>
+                    </td>
+                      <td class="p-3 border border-solid border-gray-600 text-center"><span>$80.00</span></td>
+                      <td class="p-3 border border-solid border-gray-600 text-center">
+                        <a href="#" class="inline-block mx-1 hover:text-orange transition-all"><i class="icon-pencil"></i></a>
+                        <a href="#" class="inline-block mx-1 hover:text-orange transition-all"><i class="icon-close"></i></a>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+        </div>
+    </div>
+
+</div>
+
+
+   <!-- shipping  start -->
+   <section class="pb-24">
+    <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-5">
+            <div>
+                <div>
+                    <h3 class="text-md font-semibold capitalize mb-8">calculate shipping</h3>
+                    <form action="#">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-5">
+                            <div class="col-span-2 sm:col-span-1">
+                                <select class="border border-solid border-gray-300 bg-transparent w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base">
+                                    <option>Select country</option>
+                                    <option>Azerbaijan</option>
+                                    <option>Bahamas</option>
+                                    <option>Bahrain</option>
+                                    <option>Bangladesh</option>
+                                    <option>Barbados</option>
+                                </select>
+                            </div>
+
+                            <div class="col-span-2 sm:col-span-1">
+                                <select class="border border-solid border-gray-300 bg-transparent w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base">
+                                    <option>Select State</option>
+                                    <option>Azerbaijan</option>
+                                    <option>Bahamas</option>
+                                    <option>Bahrain</option>
+                                    <option>Bangladesh</option>
+                                    <option>Barbados</option>
+                                </select>
+                            </div>
+
+                            <div class="col-span-2 sm:col-span-1">
+                                <input class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base" placeholder="Postcode / ZIP" type="text">
+                            </div>
+
+                            <div class="col-span-2 sm:col-span-1">
+                                <a href="#" class="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-orange uppercase font-semibold hover:text-white mb-5 sm:mb-0">estimate</a>
+                            </div>
+
+                            <div class="col-span-2">
+                                <h3 class="text-md font-semibold capitalize mb-8">Discount coupon Code</h3>
+                            </div>
+
+                            <div class="col-span-2 sm:col-span-1">
+                                <input class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base" placeholder="coupon Code" type="text">
+                            </div>
+
+                            <div class="col-span-2 sm:col-span-1">
+                                <a href="#" class="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-orange uppercase font-semibold hover:text-white mb-8 sm:mb-0">apply
+                                    code</a>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-4 lg:mt-0">
+                <div class="bg-gray-700 p-10">
+                    <ul class="flex flex-wrap items-center justify-between">
+                        <li class="text-base font-semibold">Product</li>
+                        <li class="text-base font-semibold">Total</li>
+                    </ul>
+
+                    <ul class="flex flex-wrap items-center justify-between">
+                        <li class="text-base font-semibold">Shipping</li>
+                        <li class="text-base font-semibold">Free shipping</li>
+                    </ul>
+                    <div class="border-t border-b border-gray-600 py-5 mt-5">
+                        <ul class="flex flex-wrap items-center justify-between">
+                            <li class="text-base font-semibold">Total</li>
+                            <li class="text-base font-semibold text-orange">$329</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <a href="#" class="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-orange uppercase font-semibold hover:text-white">Update Cart</a>
+                  <a href="#" class="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-orange uppercase font-semibold hover:text-white ml-4">checkout</a>
+                </div>
+            </div>
+          </div>
+    </div>
+    </section>
+    <!-- shipping  end -->
+
+
+    <!-- Footer section start -->
+        <footer>
+
+            <!-- News Letter section start -->
+            <div class="news-letter-section bg-gray-100 pt-24 pb-24">
+                <div class="container">
+                  @@include('news-letter/index.html')
+                </div>
+            </div>
+            <!-- News Letter section end -->
+            
+            <!-- Footer Bottom Section start -->
+            <div class="footer-bottom-section py-8 bg-gray-500">
+                <div class="container">
+                    @@include('footer-bottom/index.html')
+                </div>
+            </div>
+            <!-- Footer Bottom Section end -->
+
+        </footer>
+    <!-- Footer section end -->
+
+    <a id="scrollUp" class="w-12 h-12 rounded-full bg-orange text-white fixed right-5 bottom-16 flex flex-wrap items-center justify-center transition-all duration-300 z-10" href="#" aria-label="scroll up"><i class="icon-arrow-up"></i></a>
+
+    <!-- Modals -->
+    @@include('modal/index.html')
+    @@include('modal/index2.html')
+
+    @@include('scripts.html', {"page": "home", "plugins": ["swiper-bundle.min","popper.min","tippy-bundle.umd.min","jquery.magnific-popup.min","jquery.ajaxchimp.min"]})
+
+  
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+    @@include('head.html', {"page": "home", "plugins": ["swiper-bundle.min","magnific-popup"]})
+
+<body class="font-poppins text-dark text-sm leading-loose">
+    <!-- Header start -->
+  
+    <header id="sticky-header">
+        @@include('header/header-one.html')
+    </header>
+
+    @@include('search-form/index.html')
+    @@include('offcanvas/index.html')
+    @@include('offcanvas-cart/index.html')
+
+    <!-- Header end -->
+
+
+    <!-- Hero section start -->
+    @@include('breadcrumb/index.html',{
+        "link": "about us",
+
+    })
+    <!-- Hero section end -->
+
+
+
+<!-- about us section start -->
+<div class="py-20 bg-white">
+    <div class="container">
+           <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-5">
+            <div class="flex flex-wrap items-center mb-10 lg:mb-0">
+                <img src="assets/images/drone/drone4.webp" alt="images"> 
+            </div>
+            <div>
+                <div class="mb-10">
+                    <h3 class="font-bold uppercase text-3xl md:text-4xl mb-5 text-dark">WELCOME TO <span class="text-orange">Sinp</span></h3>
+                    <p>Parlo provide how all this mistaken idea of denouncing pleasure and sing pain was born an will give you a complete.</p>
+                </div>
+                <div class="mb-10">
+                    <h4 class="font-semibold uppercase text-md mb-4 text-dark">WE START AT 2022</h4>
+                    <p>Parlo provide how all this mistaken idea of denouncing pleasure and sing pain was born nsidae.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold uppercase text-md mb-4 text-dark">WIN BEST ONLINE SHOP AT 2022</h4>
+                    <p>Parlo provide how all this mistaken idea of denouncing pleasure and sing pain was born an will give you a solution.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- about us section end -->
+     
+
+
+<!-- testimonial section start -->
+     <div class="testimonial-area bg-gray-light py-24 bg-no-repeat bg-cover bg-center group" style="background-image: url('assets/images/hero/slide5.webp');">
+        <div class="container">
+            <div class="grid grid-cols-12 gap-x-4">
+                <div class="col-span-12">
+                    <div class="text-center pb-14">
+                        <h2 class="font-playfair font-bold text-orange text-3xl sm:text-4xl xl:text-5xl mb-5">What Client Says</h2>
+                        <p class="font-playfair font-medium text-md mb-3">Contrary to popular belief, Lorem Ipsum is not.</p>
+                     </div>
+                </div>
+                <div class="lg:col-start-3 col-span-12 lg:col-span-8 text-center">
+
+                    <div class="testimonial overflow-hidden relative">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="w-24 h-24 rounded-full mx-auto overflow-hidden">
+                                        <img src="assets/images/testimonial/testimonial1.webp" alt="image">
+                                    </div>
+                                    <p class="my-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit.</p>
+                                    <h5 class="font-semibold text-sm text-dark uppercase">Hester Perkins</h5>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="w-24 h-24 rounded-full mx-auto overflow-hidden">
+                                        <img src="assets/images/testimonial/testimonial1.webp" alt="image">
+                                    </div>
+                                    <p class="my-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit.</p>
+                                    <h5 class="font-semibold text-sm text-dark uppercase">Hester Perkins</h5>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Add Pagination -->
+                   <!-- <div class="swiper-pagination"></div> -->
+                   <!-- swiper navigation -->
+                   <div class="swiper-buttons">
+                    <div class="swiper-button-prev right-auto left-4  w-12 h-12 rounded-full bg-white border border-solid border-gray-400 text-sm text-dark group-hover:opacity-100 transition-all hover:text-orange hover:border-orange opacity-0 invisible group-hover:visible"></div>
+                    <div class="swiper-button-next left-auto right-4  w-12 h-12 rounded-full bg-white border border-solid border-gray-400 text-sm text-dark group-hover:opacity-100 transition-all hover:text-orange hover:border-orange opacity-0 invisible group-hover:visible"></div>
+                 </div>
+                    </div>
+                 </div>
+            </div>
+
+        </div>
+     </div>
+     <!-- testimonial section end -->
+
+
+     <!-- team carousel start -->
+     @@include('team/index.html')
+     <!-- team carousel end -->
+
+    <!-- Footer section start -->
+        <footer>
+
+            <!-- News Letter section start -->
+            <div class="news-letter-section bg-gray-100 pt-24 pb-24">
+                <div class="container">
+                    @@include('news-letter/index.html')
+                </div>
+            </div>
+            <!-- News Letter section end -->
+            
+            <!-- Footer Bottom Section start -->
+            <div class="footer-bottom-section py-8 bg-gray-500">
+                <div class="container">
+                    @@include('footer-bottom/index.html')
+                </div>
+            </div>
+            <!-- Footer Bottom Section end -->
+
+        </footer>
+    <!-- Footer section end -->
+
+    <a id="scrollUp" class="w-12 h-12 rounded-full bg-orange text-white fixed right-5 bottom-16 flex flex-wrap items-center justify-center transition-all duration-300 z-10" href="#" aria-label="scroll up"><i class="icon-arrow-up"></i></a>
+
+    <!-- Modals -->
+    @@include('modal/index.html')
+    @@include('modal/index2.html')
+
+    @@include('scripts.html', {"page": "home", "plugins": ["swiper-bundle.min","popper.min","tippy-bundle.umd.min","jquery.magnific-popup.min","jquery.ajaxchimp.min"]})
+
+  
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+    @@include('head.html', {"page": "home", "plugins": ["swiper-bundle.min","magnific-popup"]})
+
+<body class="font-poppins text-dark text-sm leading-loose">
+    <!-- Header start -->
+  
+    <header id="sticky-header">
+        @@include('header/header-one.html')
+    </header>
+
+    @@include('search-form/index.html')
+    @@include('offcanvas/index.html')
+    @@include('offcanvas-cart/index.html')
+
+    <!-- Header end -->
+
+
+    <!-- Hero section start -->
+    @@include('breadcrumb/index.html',{
+        "link": "shop-grid-4-column",
+
+    })
+    <!-- Hero section end -->
+
+
+
+    <!-- blog grid section start -->
+
+        <div class="py-24">
+            <div class="container">
+                <div class="flex flex-wrap flex-col lg:flex-row">
+                    <div id="shoptab" class="flex-1">
+                        <div class="flex flex-wrap justify-between items-center px-4">
+                            <div class="flex flex-wrap">
+                               <div class="shop-select flex mr-12">
+                                  <label for="SortBy">Sort by :</label>
+                                  <select id="SortBy" class="px-2 bg-transparent">
+                                     <option value="manual">Featured</option>
+                                     <option value="best-selling">Best Selling</option>
+                                     <option value="title-ascending">Alphabetically, A-Z</option>
+                                     <option value="title-descending">Alphabetically, Z-A</option>
+                                     <option value="price-ascending">Price, low to high</option>
+                                     <option value="price-descending">Price, high to low</option>
+                                     <option value="created-descending">Date, new to old</option>
+                                     <option value="created-ascending">Date, old to new</option>
+                                  </select>
+                               </div>
+                               <p class="my-2 sm:my-0">Showing 1 - 9 of 9 result</p>
+                            </div>
+                            <div>
+                               <span>Show :</span>
+                               <select class="bg-transparent">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                               </select>
+                            </div>
+                            <div>
+                                <ul class="shop-tab-nav flex flex-wrap">
+                                    <li class="active"><a href="#grid" class="text-base hover:text-orange inline-block py-2 px-2"><i class="icon-grid"></i></a></li>
+                                    <li><a href="#list" class="text-base hover:text-orange inline-block py-2 px-2 ml-5"><i class="icon-menu"></i></a></li>
+                                </ul>
+                            </div>
+                         </div>
+
+                        <div class="mt-10">
+                            <div id="grid" class="shop-tab-content active">
+                               @@include('shop/shop-grid-4-column.html')
+                            </div>
+                            <div id="list" class="shop-tab-content">
+                                @@include('shop/shop-list.html')
+                            </div>
+                        </div>
+
+                      <div class="mt-12">
+                        @@include('pagination/index.html')
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- blog grid section end -->
+
+
+      
+
+    <!-- Footer section start -->
+        <footer>
+
+            <!-- News Letter section start -->
+            <div class="news-letter-section bg-gray-100 pt-24 pb-24">
+                <div class="container">
+                    @@include('news-letter/index.html')
+                </div>
+            </div>
+            <!-- News Letter section end -->
+            
+            <!-- Footer Bottom Section start -->
+            <div class="footer-bottom-section py-8 bg-gray-500">
+                <div class="container">
+                    @@include('footer-bottom/index.html')
+                </div>
+            </div>
+            <!-- Footer Bottom Section end -->
+
+        </footer>
+    <!-- Footer section end -->
+
+    <a id="scrollUp" class="w-12 h-12 rounded-full bg-orange text-white fixed right-5 bottom-16 flex flex-wrap items-center justify-center transition-all duration-300 z-10" href="#" aria-label="scroll up"><i class="icon-arrow-up"></i></a>
+
+    <!-- Modals -->
+    @@include('modal/index.html')
+    @@include('modal/index2.html')
+
+    @@include('scripts.html', {"page": "home", "plugins": ["swiper-bundle.min","popper.min","tippy-bundle.umd.min","jquery.magnific-popup.min","jquery.ajaxchimp.min"]})
+
+  
+
+</body>
+
+</html>
