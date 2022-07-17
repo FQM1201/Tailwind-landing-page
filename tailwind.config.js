@@ -6,8 +6,8 @@ module.exports = {
       xs: "320px",
       sm: "576px",
       md: "768px",
-      lg: "992px",
-      xl: "1280px",
+      lg: "1024px",
+      xl: "1440px",
       "2xl": "1536px",
     },
     extend: {
@@ -21,6 +21,8 @@ module.exports = {
         poppins: ["Poppins", "serif"],
         playfair: ["Playfair Display", "serif"],
         roboto: ["Roboto", "serif"],
+        kalam: ["Kalam", "serif"],
+        acumin: ["Acumin Pro", "serif"]
       },
 
       colors: {
@@ -53,14 +55,35 @@ module.exports = {
         instagram: "#c32aa3",
       },
 
+      //title1: text-3lg lg:text-4xl xl:text-5xl 
+      //title2: text-2lg lg:text-xl xl:text-3xl 
+      //title3: text-6md lg:text-lg xl:text-3lg 
+      //title4: text-3md lg:text-5md xl:text-7md 
+      //title5: text-md lg:text-2md xl:text-4md 
+      //body1: text-base lg:text-md xl:text-md 
+      //body2: text-3sm lg:text-4sm xl:text-4sm 
+      //eyebrow: text-2sm
       fontSize: {
         sm: "12px",
-        base: "18px",
-        md: "20px",
-        lg: "40px",
-        xl: "64px",
-        "2xl": "80px",
-        "3xl": "120px",
+        "2sm": ["14px", "14px"],
+        "3sm": ["14px", "19.6px"],
+        "4sm": ["16px", "22.4px"],
+        base: ["18px", "25.2px"],
+        md: ["20px", "28px"], 
+        "2md": ["22px", "30.8px"], 
+        "3md": ["24px", "31.2px"], 
+        "4md": ["24px", "33.6px"], 
+        "5md": ["26px", "33.8px"],
+        "6md": ["28", "28px"],
+        "7md": ["32px", "41.6px"],
+        lg: ["40px", "40px"],
+        "2lg": ["40px", "44px"],
+        "3lg": ["56px", "56px"],
+        xl: ["64px", "57.6px"],
+        "2xl": ["64px", "90%"],
+        "3xl": ["80px", "72px"],
+        "4xl": ["88px", "88px"],
+        "5xl": "120px",
       },
       lineHeight: {
         "extra-loose": "2.5",
@@ -168,6 +191,12 @@ module.exports = {
             maxWidth: "1440px",
           },
         },
+        ".component-reverse": {
+          flexDirection: "column-reverse",
+          "@screen md": {
+            flexDirection: "column-reverse",
+          },
+        }
       });
     },
     require("tailwindcss-pseudo")({
