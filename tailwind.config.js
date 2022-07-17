@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     screens: {
       xs: "320px",
-      sm: "576px",
-      md: "768px",
-      lg: "992px",
-      xl: "1280px",
+      sm: "540px",
+      md: "920px",
+      lg: "1024px",
+      xl: "1440px",
       "2xl": "1536px",
     },
     extend: {
@@ -156,16 +156,16 @@ module.exports = {
         ".container": {
           maxWidth: "100%",
           "@screen sm": {
-            maxWidth: "540px",
+            maxWidth: "460px",
           },
           "@screen md": {
-            maxWidth: "920px",
+            maxWidth: "800px",
           },
           "@screen lg": {
-            maxWidth: "1024px",
+            maxWidth: "900px",
           },
           "@screen xl": {
-            maxWidth: "1440px",
+            maxWidth: "1300px",
           },
         },
       });
