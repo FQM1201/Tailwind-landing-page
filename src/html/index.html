@@ -4,7 +4,7 @@
 @@include('head.html', {"page": "home", "plugins": ["swiper-bundle.min","magnific-popup"]})
 
 <body class="font-poppins text-dark text-sm leading-loose">
-    <!-- Header start -->
+<!-- Header start -->
 
     <header id="sticky-header" class="bg-[#e4dcca]">
         @@include('header/header-one.html')
@@ -21,7 +21,7 @@
                     <h2
                         class="font-bold uppercase text-black text-lg lg:text-xl xl:text-2xl leading-tight mb-5 max-w-sm">
                         Your story is powerful</h2>
-                    <p class="font-normal text-black text-md xl:text-base leading-normal max-w-[544px]">
+                    <p class="font-normal font-acumin text-black text-md xl:text-base leading-normal max-w-[544px]">
                         Over the past decade, we’ve developed the tools, knowledge, and network needed to help 100s of
                         members harness the power of storytelling to achieve massive growth through our Content Partners
                         Program.
@@ -42,31 +42,88 @@
         </div>
     </section>
 
-    <section class="review-section pt-24 pb-24 bg-yellow">
+    <!-- Review section start -->
+    <section class="review-section py-[120px] bg-yellow">
         <div class="container">
-            <div class="grid grid-cols-12 gap-4">
-                <div class="col-span-12">
-                    @@include('product-carousel/index.html')
+            <p class="font-playfair uppercase text-black text-2lg lg:text-xl xl:text-3xl  leading-tight mb-5">Reviews</p>
+            <div class="grid">
+                <div class="carousel" data-flickity>
+                    <div class="carousel-cell">
+                        <div class="flex flex-wrap component-reverse">
+                            <div class="w-full lg:w-1/2 pr-16">
+                                <div class="flex mt-12">
+                                    <img src="assets/images/star-black.svg" class="mr-1" alt="">
+                                    <img src="assets/images/star-black.svg" class="mr-1" alt="">
+                                    <img src="assets/images/star-black.svg" class="mr-1" alt="">
+                                    <img src="assets/images/star-black.svg" class="mr-1" alt="">
+                                    <img src="assets/images/star-black.svg" class="mr-1" alt="">
+                                    <img src="assets/images/star-white.svg" alt="">
+                                </div>
+                                <p class="font-playfair text-black text-3md lg:text-5md xl:text-7md  mt-12">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.”</p>
+                                <p class="text-2sm font-acumin uppercase mt-12">FIRSTNAME LASTNAME</p>
+                            </div>
+                            <div class="w-full lg:w-1/2 pr-14">
+                                <img class="image-mask1" src="assets/images/hero11.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="flex flex-wrap component-reverse">
+                            <div class="w-full lg:w-1/2 pr-16">
+                            <div class="flex mt-12">
+                                <img src="assets/images/star-black.svg" class="mr-1" alt="">
+                                <img src="assets/images/star-black.svg" class="mr-1" alt="">
+                                <img src="assets/images/star-black.svg" class="mr-1" alt="">
+                                <img src="assets/images/star-black.svg" class="mr-1" alt="">
+                                <img src="assets/images/star-black.svg" class="mr-1" alt="">
+                                <img src="assets/images/star-white.svg" alt="">
+                            </div>
+                            <p class="font-playfair text-black text-3md lg:text-5md xl:text-7md  mt-12">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.”</p>
+                            <p class="text-2sm font-acumin uppercase mt-12">FIRSTNAME LASTNAME</p>
+                            </div>
+                            <div class="w-full lg:w-1/2 pr-14">
+                                <img class="image-mask1" src="assets/images/hero11.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="flex flex-wrap component-reverse">
+                            <div class="w-full lg:w-1/2 pr-16">
+                            <div class="flex mt-12">
+                                <img src="assets/images/star-black.svg" class="mr-1" alt="">
+                                <img src="assets/images/star-black.svg" class="mr-1" alt="">
+                                <img src="assets/images/star-black.svg" class="mr-1" alt="">
+                                <img src="assets/images/star-black.svg" class="mr-1" alt="">
+                                <img src="assets/images/star-black.svg" class="mr-1" alt="">
+                                <img src="assets/images/star-white.svg" alt="">
+                            </div>
+                            <p class="font-playfair text-black text-3md lg:text-5md xl:text-7md  mt-12">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.”</p>
+                            <p class="text-2sm font-acumin uppercase mt-12">FIRSTNAME LASTNAME</p>
+                            </div>
+                            <div class="w-full lg:w-1/2 pr-14">
+                                <img class="image-mask1" src="assets/images/hero11.svg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Review section end -->
 
-    <!-- Feartured section end -->
 
-    <!-- Feartured section start -->
+
+
+    <!-- A program section start -->
 
     <section class="product-banner-section bg-lime py-[160px]">
 
         <div class="container">
             <div class="pb-[124px]">
-                <h3
-                    class="mx-auto text-left lg:text-center font-bold text-black text-[56px] lg:text-2xl xl:text-3xl mb-8 leading-none max-w-lg lg:max-w-3xl xl:max-w-5xl">
-                    A
-                    program <span>tailored<span> to your needs
+                <h3 class="mx-auto text-left lg:text-center uppercase font-playfair text-black text-3lg lg:text-4xl xl:text-5xl  mb-8 leading-none max-w-lg lg:max-w-3xl xl:max-w-5xl">A
+                    program <span class="font-kalam">tailored<span class="font-playfair"> to your needs
                 </h3>
-                <p
-                    class="text-left lg:text-center font-normal text-black text-md xl:text-base leading-normal max-w-lg lg:max-w-[674px] xl:max-w-[684px] mx-auto">
+                <p class="text-left lg:text-center font-acumin text-black text-base lg:text-md xl:text-md leading-normal max-w-lg lg:max-w-[674px] xl:max-w-[684px] mx-auto">
                     A brand strategist will work with you to learn your story, what has and hasn’t worked for you,
                     and what makes your story and brand most compelling in order to map out an execution strategy to
                     significantly level up your brand. Below, you’ll find some of the options available to members.
@@ -76,9 +133,8 @@
             <div class="lg:grid lg:grid-cols-2 gap-x-4">
 
                 <div class="text-black">
-                    <h2 class="text-[28px] lg:text-lg xl:text-[56px] mb-6 uppercase leading-none">podcasts</h2>
-                    <p
-                        class="font-normal text-md xl:text-base leading-normal max-w-md lg:max-w-[478px] xl:max-w-[588px]">
+                    <h2 class="text-md lg:text-lg xl:text-3lg mb-6 uppercase leading-none font-playfair">podcasts</h2>
+                    <p class="font-acumin text-md xl:text-md leading-normal max-w-md lg:max-w-[478px] xl:max-w-[588px]">
                         Podcasts can improve conversion rates. For folks who are already considering working with you,
                         hearing an in-depth conversation about what sets you apart from the competition can be the
                         deciding factor for many potential clients.
@@ -164,33 +220,117 @@
 
     </section>
 
+    <!-- A program section end -->
 
-    <!-- Feartured section end -->
 
-
-    <!-- Feartured section start -->
-    <section class="pt-24 pb-24">
+    <!-- Client Success section start -->
+    <section class="product-banner-section bg-[#B1BFAD] py-[160px]">
         <div class="container">
+            <div class="pb-[124px]">
+                <p class="mx-auto text-left lg:text-center uppercase font-playfair text-black text-3lg lg:text-4xl xl:text-5xl mb-8 leading-none max-w-lg lg:max-w-3xl xl:max-w-5xl">Client success 
+                    <span class="mx-auto text-left lg:text-center uppercase font-kalam text-black text-3lg lg:text-4xl xl:text-5xl mb-8 leading-none max-w-lg lg:max-w-3xl xl:max-w-5xl"> stories </span>
+                </p>
+            </div>
+
+            <!-- small than xl screen response -->
+            <div class="xl:hidden" >
+                <div class="lg:grid lg:grid-cols-2 gap-x-4">
+                    <div class="px-4">
+                        <p class="font-playfair text-2sm uppercase mt-[8px] mb-[31px]">Success Stories</p>
+                        <p class="font-playfair text-2lg lg:text-xl xl:text-3xl  uppercase mb-[32px]">Sarah’s Story</p>
+                        <p class="text-md lg:text-2md xl:text-4md  mb-[69px] font-acumin lg:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <img class="image-mask1 rounded-2xl my-auto md:relative md:w-full" src="assets/images/hero11.svg" alt="Cinque Terre">
+                        <p class="text-4sm md:text-4sm xl:text-md mb-9 font-playfair mb-[80px] my-auto lg:w-full">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.”</p>
+                        <p class="text-6md lg:text-lg xl:text-3lg font-playfair mb-[24px]">374K</p>
+                        <p class="text-4sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+    
+                    <!-- <div class="transform xl:translate-x-[150px] xl:scale-105">
+                        <img class="mt-8 md:mt-0 max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-full rounded-2xl"
+                            src="assets/images/convertkit-BOI9jki3nzY-unsplash1.svg" alt="recording image" />
+                    </div> -->
+    
+    
+                </div>
+                <div class="-mx-4 flex flex-wrap mt-12 mb-11 relative">
+                  <div class="px-4 lg:w-1/2 xl:w-1/2">
+                    <p class="font-playfair text-sm uppercase mt-12 mb-10">Success Stories</p>
+                    <p class="font-playfair text-6xl xs:text-4xl uppercase letter-scale-3 mt-12 mb-10">Sarah’s Story</p>
+                    <p class="text-xl xs:text-xl mb-9 font-acumin mt-12 mb-11 my-auto lg:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <br>
+                    <br>
+                    <div class="mask2">
+                    <img class="rounded-2xl my-auto  mobile:relative md:w-full" src="assets/images/mask/mask11.png" alt="Cinque Terre" width="600" height="400">
+                    </div>
+                    <p class="text-[26px] xs:text-[26px] mb-9 font-playfair mt-12 mb-11 my-auto lg:w-full">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.”</p>
+                    <br>
+                    <p class="text-4xl xs:text-4xl font-playfair mb-5">374K</p>
+                    <p class="text-base w-70pe">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <div class="px-4 lg:w-1/2 xl:w-1/2">
+                  </div>
+                </div>
+                <div class="-mx-4 flex flex-wrap mt-12 mb-11 relative">
+                  
+                  <div class="px-4 lg:w-1/2 xl:w-1/2">
+                  
+                  </div>
+                  <div class="px-4 lg:w-1/2 xl:w-1/2">
+                  <p class="font-playfair text-sm uppercase mt-12 mb-10">Success Stories</p>
+                  <p class="font-playfair text-6xl xs:text-4xl uppercase mt-12 mb-10">Corey’s Story</p>
+                  <p class="text-xl xs:text-xl mb-9 font-acumin mt-12 mb-11 my-auto lg:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <br>
+                  <br>
+                  <div class="mask3">
+                    <img class="rounded-2xl my-auto absolute  mobile:relative  md:w-full" src="assets/images/mask/mask2.png" alt="Cinque Terre" width="600" height="400">
+                  </div>
+                  <p class="text-[26px] xs:text-[26px] mb-9 font-playfair mt-12 mb-11 my-auto lg:w-full">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.”</p>
+                  <br>
+                  <p class="text-4xl xs:text-4xl font-playfair mb-5">96%</p>
+                  <p class="text-base w-70pe">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  
+                  </div>
+                </div>
+                <div class="-mx-4 flex flex-wrap mt-12 mb-11 relative">
+                  <div class="px-4 lg:w-1/2 xl:w-1/2">
+                    <p class="font-playfair text-sm uppercase mt-12 mb-10">Success Stories</p>
+                    <p class="font-playfair text-6xl xs:text-4xl uppercase mt-12 mb-10">Marianne’s Story</p>
+                    <p class="text-xl xs:text-xl mb-9 font-acumin mt-12 mb-11 my-auto lg:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <br>
+                    <br>
+                    <div class="mask2">
+                    <img class="rounded-2xl my-auto  mobile:relative  md:w-full" src="assets/images/mask/mask3.png" alt="Cinque Terre" width="600" height="400">
+                    </div>
+                    <p class="text-[26px] xs:text-[26px] mb-9 font-playfair mt-12 mb-11 my-auto lg:w-full">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.”</p>
+                    <br>
+                    <p class="text-4xl xs:text-4xl font-playfair mb-5">374K</p>
+                    <p class="text-base w-70pe">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    
+                  </div>
+                  <div class="px-11 lg:w-1/2 xl:w-1/2">
+                  
+                  </div>
+                </div>
+                   
+            </div>
+
+
+
             <div class="lg:grid lg:grid-cols-2 gap-x-4">
 
-                <div>
-                    <h2 class="font-playfair font-bold text-primary text-3xl xl:text-xl mb-5 leading-tight">Smartwatch
-                        with the help of smart phone
-
-                    </h2>
-                    <p class="font-normal text-primary text-base xl:text-md">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration.
+                <div class="text-black">
+                    <h2 class="text-md lg:text-lg xl:text-3lg mb-6 uppercase leading-none font-playfair">podcasts</h2>
+                    <p class="font-acumin text-md xl:text-md leading-normal max-w-md lg:max-w-[478px] xl:max-w-[588px]">
+                        Podcasts can improve conversion rates. For folks who are already considering working with you,
+                        hearing an in-depth conversation about what sets you apart from the competition can be the
+                        deciding factor for many potential clients.
                     </p>
 
                     <div class="mt-10 -mb-10">
-                        <div class="flex flex-wrap mb-10 items-center">
-
-                            <div class="mr-5">
-                                <img class="w-20" src="assets/images/icon/wifi.webp" alt="blog image">
-                            </div>
+                        <div class="flex flex-wrap mb-10 items-center">                           
                             <div class="flex-1">
-                                <h3 class="text-primary font-medium text-md lg:text-lg capitalize mb-3">Connectivity
+                                <h3 class="text-black text-md lg:text-lg capitalize mb-3">
+                                    client examples
                                 </h3>
                                 <p>Receive incoming calls or speed dial contacts <br>without reaching aniesn.</p>
                             </div>
@@ -219,16 +359,19 @@
                     </div>
                 </div>
 
-                <div class="transform xl:translate-x-10 xl:scale-105">
-                    <img class="mt-8 md:mt-0 max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-full"
-                        src="assets/images/banner/featured3.webp" alt="product image" />
+                <div class="transform xl:translate-x-[150px] xl:scale-105">
+                    <img class="mt-8 md:mt-0 max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-full rounded-2xl"
+                        src="assets/images/convertkit-BOI9jki3nzY-unsplash1.svg" alt="recording image" />
                 </div>
 
 
             </div>
+
+
         </div>
+
     </section>
-    <!-- Feartured section end -->
+    <!-- Client Success section end -->
 
 
     <!-- Banner section start -->
