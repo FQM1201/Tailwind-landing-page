@@ -24,13 +24,15 @@ module.exports = {
       },
 
       colors: {
+        primary: "#e4dcca", //main color
+        yellow: "#F8FDC6", //second primary color
+        lime: "#F4F3E9", //third primary color
         sky: {
           200: "#fffaef",
           100: "#effafa",
         },
         white: "#fff",
-        orange: "#fc6539",
-        primary: "#06264b",
+        orange: "#fc6539",        
         secondary: "",
         dark: "#1f2226",
         gray: {
@@ -52,12 +54,13 @@ module.exports = {
       },
 
       fontSize: {
-        sm: "14px",
-        base: "16px",
+        sm: "12px",
+        base: "18px",
         md: "20px",
-        lg: "24px",
-        xl: "45px",
-        "2xl": "70px",
+        lg: "40px",
+        xl: "64px",
+        "2xl": "80px",
+        "3xl": "120px",
       },
       lineHeight: {
         "extra-loose": "2.5",
@@ -156,13 +159,13 @@ module.exports = {
             maxWidth: "540px",
           },
           "@screen md": {
-            maxWidth: "720px",
+            maxWidth: "920px",
           },
           "@screen lg": {
-            maxWidth: "960px",
+            maxWidth: "1024px",
           },
           "@screen xl": {
-            maxWidth: "1170px",
+            maxWidth: "1440px",
           },
         },
       });

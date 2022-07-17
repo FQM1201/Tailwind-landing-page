@@ -6,7 +6,7 @@
 <body class="font-poppins text-dark text-sm leading-loose">
     <!-- Header start -->
 
-    <header id="sticky-header" class="bg-[#E4DCCA]">
+    <header id="sticky-header" class="bg-[#e4dcca]">
         @@include('header/header-one.html')
     </header>
 
@@ -21,23 +21,22 @@
 
     <!-- Feartured section start -->
 
-    <section class="pt-24 pb-24 bg-[#E4DCCA]">
+    <section class="pt-24 pb-24 bg-primary">
         <div class="container">
             <div class="flex items-center -mx-4 flex-wrap">
-                <div class="w-full md:w-1/2 px-4">
-                    <h2
-                        class="font-bold uppercase text-black text-[80px] sm:text-[64px] xl:text-[40px] leading-tight mb-5">
-                        Your<br>story is<br>powerful</h2>
-                    <p class="font-normal text-black text-[20px] xl:text-[18px] leading-normal">
+                <div class="w-full lg:w-1/2 px-4">
+                    <h2 class="font-bold uppercase text-black text-lg lg:text-xl xl:text-2xl leading-tight mb-5 max-w-sm">
+                        Your story is powerful</h2>
+                    <p class="font-normal text-black text-md xl:text-base leading-normal max-w-[544px]">
                         Over the past decade, we’ve developed the tools, knowledge, and network needed to help 100s of
                         members harness the power of storytelling to achieve massive growth through our Content Partners
                         Program.
                     </p>
                     <a href="#"
-                        class="transition-all bg-orange hover:bg-primary px-5 md:px-12 py-3 md:py-4 xl:py-4 rounded-full text-white uppercase font-medium text-[12px] inline-block mt-8 leading-none">Unlock
+                        class="transition-all bg-yellow hover:bg-primary px-5 md:px-12 py-3 md:py-4 xl:py-4 rounded-full text-black uppercase font-medium text-sm inline-block mt-8 leading-none">Unlock
                         your potential</a>
                 </div>
-                <div class="w-full md:w-1/2 px-4">
+                <div class="w-full lg:w-1/2 px-4">
                     <img class="mt-8 md:mt-0 w-full h-full" src="assets/images/bags/bag1.webp" alt="product image"
                         loading="lazy" width="570" height="602" />
                 </div>
@@ -45,120 +44,89 @@
         </div>
     </section>
 
-    @@include('hero/index-2.html')
-
-    <section class="pt-24 pb-24">
+    <section class="review-section pt-24 pb-24 bg-yellow">
         <div class="container">
-            <div class="flex items-center -mx-4 flex-wrap">
-                <div class="w-full md:w-1/2 px-4 order-last md:order-first">
-                    <img class="mt-8 md:mt-0" src="assets/images/banner/featured1.webp" alt="product image" />
-                </div>
-
-                <div class="w-full md:w-1/2 px-4">
-                    <span class="text-md font-normal text-orange block mb-4">FEATURED PRODUCT</span>
-                    <h2
-                        class="font-playfair font-bold text-primary text-[30px] sm:text-[36px] xl:text-[48px] leading-tight mb-5">
-                        Minimal Smartwatch <br>
-                        For Watch Lover</h2>
-                    <hr class="w-16 h-1 bg-orange mb-7 border-0">
-                    <p class="font-normal text-primary text-base xl:text-md">
-                        When an unknown printer took a galley of type and scrambled it to
-                        make a type specimen book. sint occaeca Excepteur sint occaecat
-                        cupidatat non proident.
-                    </p>
-                    <a href="single-product.html"
-                        class="bg-primary transition-all hover:bg-orange hover:text-white px-5 md:px-12 py-3 md:py-4 xl:py-4 rounded-full text-orange capitalize font-medium text-sm lg:text-md inline-block mt-8 leading-normal">Buy
-                        Now</a>
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-12">
+                    @@include('product-carousel/index.html')
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- Feartured section end -->
 
     <!-- Feartured section start -->
 
-    <section class="product-banner-section bg-gray-200 pt-24 pb-24">
+    <section class="product-banner-section bg-lime py-[160px]">
 
         <div class="container">
-            <div class="text-center pb-14">
-                <span class="text-md font-normal text-orange block mb-4">EXPLORE THE AWESOME</span>
-                <h3 class="font-playfair font-bold text-primary text-3xl sm:text-4xl xl:text-5xl mb-5">Product Feature
+            <div class="pb-[124px]">
+                <h3 class="mx-auto text-left lg:text-center font-bold text-black text-[56px] lg:text-2xl xl:text-3xl mb-8 leading-none max-w-lg lg:max-w-3xl xl:max-w-5xl">A
+                    program <span>tailored<span> to your needs
                 </h3>
+                <p class="text-center font-normal text-black text-md xl:text-base leading-normal">
+                    A brand strategist will work with you to learn your story, what has and hasn’t worked for you,
+                    and what makes your story and brand most compelling in order to map out an execution strategy to
+                    significantly level up your brand. Below, you’ll find some of the options available to members.
+                </p>
             </div>
-            <div class="grid lg:grid-cols-3 -mb-10 gap-x-4">
-                <div>
 
-                    <div class="flex flex-wrap items-center lg:flex-row-reverse mb-10">
-                        <div class="text-primary text-4xl lg:ml-5 mr-5 lg:mr-0"><i class="icofont-reply"></i></div>
-                        <div class="flex-1 lg:text-right">
-                            <h4 class="text-primary font-medium text-md lg:text-lg capitalize mb-3">Firsted Reply</h4>
-                            <p>Respond to texts and messages directly from your wrist</p>
+            <div class="lg:grid lg:grid-cols-2 gap-x-4">
+
+                <div class="text-black">
+                    <h2 class="text-[28px] lg:text-lg xl:text-[56px] mb-6 uppercase leading-none">podcasts</h2>
+                    <p class="font-normal text-md xl:text-base leading-normal">
+                        Podcasts can improve conversion rates. For folks who are<br>already considering working with you,
+                        hearing an in-depth<br>conversation about what sets you apart from the competition<br>can be the
+                        deciding factor for many potential clients.
+                    </p>
+
+                    <div class="mt-10 -mb-10">
+                        <div class="flex flex-wrap mb-10 items-center">
+
+                            <div class="mr-5">
+                                <img class="w-20" src="assets/images/icon/wifi.webp" alt="blog image">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-primary font-medium text-md lg:text-lg capitalize mb-3">Connectivity
+                                </h3>
+                                <p>Receive incoming calls or speed dial contacts <br>without reaching aniesn.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex flex-wrap items-center lg:flex-row-reverse mb-10">
-                        <div class="text-primary text-4xl lg:ml-5 mr-5 lg:mr-0"><i class="icofont-battery-full"></i>
+                        <div class="flex flex-wrap mb-10 items-center">
+
+                            <div class="mr-5">
+                                <img class="w-20" src="assets/images/icon/gauge.webp" alt="blog image">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-primary font-medium text-md lg:text-lg capitalize mb-3">Productivity
+                                </h3>
+                                <p>Calls &amp; Calendar management personal contacts <br>without reaching edfes.</p>
+                            </div>
                         </div>
-                        <div class="flex-1 lg:text-right">
-                            <h4 class="text-primary font-medium text-md lg:text-lg capitalize mb-3">Battery Life</h4>
-                            <p>Maximise your battery life on standby, and tilt your wrist.</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap items-center lg:flex-row-reverse mb-10">
-                        <div class="text-primary text-4xl lg:ml-5 mr-5 lg:mr-0"><i class="icofont-mic"></i></div>
-                        <div class="flex-1 lg:text-right">
-                            <h4 class="text-primary font-medium text-md lg:text-lg capitalize mb-3">Personal Assistant
-                            </h4>
-                            <p>Receive incoming calls or speed dial contacts without phone</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap items-center lg:flex-row-reverse mb-10">
-                        <div class="text-primary text-4xl lg:ml-5 mr-5 lg:mr-0"><i class="icofont-sun"></i></div>
-                        <div class="flex-1 lg:text-right">
-                            <h4 class="text-primary font-medium text-md lg:text-lg capitalize mb-3">Anti Glare</h4>
-                            <p>Incoming calls or speed dial contacts without reaching.</p>
+                        <div class="flex flex-wrap mb-10 items-center">
+
+                            <div class="mr-5">
+                                <img class="w-20" src="assets/images/icon/control-system.webp" alt="blog image">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-primary font-medium text-md lg:text-lg capitalize mb-3">Contorls</h3>
+                                <p>Controls management personal contacts without <br>reaching phones wfers.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex flex-wrap items-center justify-center">
-                    <img class="max-w-full" src="assets/images/banner/featured2.webp" alt="banner image">
+                <div class="transform xl:translate-x-[150px] xl:scale-105">
+                    <img class="mt-8 md:mt-0 max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-full rounded-2xl"
+                        src="assets/images/convertkit-BOI9jki3nzY-unsplash1.svg" alt="recording image" />
                 </div>
 
-                <div>
-                    <div class="flex flex-wrap items-center mb-10">
-                        <div class="text-primary text-4xl mr-5"><i class="icofont-gym-alt-3"></i></div>
-                        <div class="flex-1">
-                            <h4 class="text-primary font-medium text-md lg:text-lg capitalize mb-3">Fitness Tracking
-                            </h4>
-                            <p>Monitor and track your steps and distance day to day</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap items-center mb-10">
-                        <div class="text-primary text-4xl mr-5"><i class="icofont-phone"></i></div>
-                        <div class="flex-1">
-                            <h4 class="text-primary font-medium text-md lg:text-lg capitalize mb-3">Manage Calls</h4>
-                            <p>Receive incoming calls or speed dial reaching your phone</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap items-center mb-10">
-                        <div class="text-primary text-4xl mr-5"><i class="icofont-brand-android-robot"></i></div>
-                        <div class="flex-1">
-                            <h4 class="text-primary font-medium text-md lg:text-lg capitalize mb-3">App Launch</h4>
-                            <p>Shortcuts to your favorite apps directly on your watchface</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap items-center mb-10">
-                        <div class="text-primary text-4xl mr-5"><i class="icofont-music-note"></i></div>
-                        <div class="flex-1">
-                            <h4 class="text-primary font-medium text-md lg:text-lg capitalize mb-3">Music Control</h4>
-                            <p>Easily accessible playback commands for your</p>
-                        </div>
-                    </div>
-                </div>
 
             </div>
+
+
         </div>
 
     </section>
