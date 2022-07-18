@@ -74,7 +74,7 @@ module.exports = {
         "3md": ["24px", "31.2px"], 
         "4md": ["24px", "33.6px"], 
         "5md": ["26px", "33.8px"],
-        "6md": ["28", "28px"],
+        "6md": ["28px", "28px"],
         "7md": ["32px", "41.6px"],
         lg: ["40px", "40px"],
         "2lg": ["40px", "44px"],
@@ -192,10 +192,20 @@ module.exports = {
           },
         },
         ".component-reverse": {
-          flexDirection: "column-reverse",
           "@screen md": {
             flexDirection: "column-reverse",
           },
+          
+          "@screen lg": {
+            flexDirection: "inherit",
+          },
+
+          "@screen xl": {
+            flexDirection: "inherit",
+          },
+        },
+        ".transform-flip": {
+          transform: "scaleX(-1)"
         }
       });
     },
