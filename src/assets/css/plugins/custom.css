@@ -214,7 +214,7 @@ section.special{
     opacity: 0;
     max-height: 0;
     font-size: 0;
-    transition: .6s ease;
+    /* transition: .4s ; */
   }
   
   .read-more-state:checked ~ .read-more-wrap .read-more-target {
