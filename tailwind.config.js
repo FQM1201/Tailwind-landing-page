@@ -84,7 +84,7 @@ module.exports = {
         "2xl": ["64px", "90%"],
         "3xl": ["80px", "72px"],
         "4xl": ["88px", "88px"],
-        "5xl": "120px",
+        "5xl": ["120px", "120px"],
       },
       lineHeight: {
         "extra-loose": "2.5",
@@ -194,6 +194,12 @@ module.exports = {
         },
         ".component-reverse": {
           "@screen md": {
+            flexDirection: "column-reverse",
+          },
+          "@screen sm": {
+            flexDirection: "column-reverse",
+          },
+          "@screen xs": {
             flexDirection: "column-reverse",
           },
           
