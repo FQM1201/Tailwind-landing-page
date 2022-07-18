@@ -78,7 +78,7 @@
   }
 
   .is-sticky {
-    @apply fixed inset-x-0 top-0 w-full animate-fadeInDown bg-white shadow-sticky transition-all ease-linear duration-300;
+    @apply fixed inset-x-0 top-0 w-full animate-fadeInDown shadow-sticky transition-all ease-linear duration-300;
   }
   .is-sticky .main-menu .main-menu__item > a {
     @apply block py-5;
