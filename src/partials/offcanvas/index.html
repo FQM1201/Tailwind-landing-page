@@ -2,26 +2,42 @@
 <div class="offcanvas-overlay hidden fixed inset-0 bg-black opacity-50 z-50"></div>
 <!-- offcanvas-overlay end -->
 <!-- offcanvas-mobile-menu start -->
-<div id="offcanvas-mobile-menu" class="offcanvas left-auto right-0 z-50 transform translate-x-translate-x-full-120 fixed font-normal text-white top-0 z-50 h-screen w-full transition-all ease-in-out duration-300 bg-[#242E22]">
+<div id="offcanvas-mobile-menu" class="offcanvas left-auto right-0 z-50 transform translate-x-translate-x-full-120 fixed text-white top-0 z-50 h-screen w-full transition-all ease-in-out duration-300 bg-[#242E22]  overflow-y-auto flex flex-col justify-between">
 
-  <div class="px-8 py-12 h-5/6 overflow-y-auto">
 
     <!-- close button start -->
-    <button class="offcanvas-close group transition-all r-[22px] t-[20px] text-white flex items-center justify-center absolute top-0" aria-label="offcanvas"><i class="icon-close text-6md transition-all transform group-hover:rotate-90"></i></button>
-    <!-- close button end -->
+    <div>
+      <button class="offcanvas-close group transition-all right-[22px] top-[20px] text-white flex items-center justify-center absolute top-0" aria-label="offcanvas"><i class="icon-close text-6md transition-all transform group-hover:rotate-90"></i></button>
+      <!-- close button end -->
+      <img src="assets/images/Voyage-white.svg" class="my-[24px] mx-[16px]" alt="logo" loading="lazy" width="99" height="18">
 
+    </div>
     <!-- offcanvas-menu start -->
-  
-  
-    <nav class="offcanvas-menu pb-10 mb-10 border-b border-solid border-gray-600">
-      <ul>
-        <li class="relative block"><a href="#" class="relative block uppercase font-cumin text-sm mr-[32px] py-1 ">the program</a></li>
-        <li class="relative block"><a href="#" class="relative block uppercase font-cumin text-sm mr-[32px] py-1 ">testiminials</a></li>
-        <li class="relative block"><a href="#" class="relative block uppercase font-cumin text-sm mr-[32px] py-1 ">faq</a></li>
-      </ul>
-    </nav>
+        <ul class="">
+          <li class="group text-center relative py-[4px]">
+            <a href="#program" class="uppercase text-white letter-scale-3 font-playfair text-6md  underline">The program </a>
+          </li>
+          <li class="group text-center relative py-[4px]">
+            <a href="#testimonial" class="uppercase text-white letter-scale-3 font-playfair text-6md underline"> Testimonials</a>
+          </li>
+          <li class="group text-center relative py-[4px]">
+            <a href="#faq" class="uppercase text-white letter-scale-3 font-playfair text-6md underline">Faq</a>
+          </li>
+        </ul>
+        <div class="text-center">
+          <div class="flex justify-center">
+          <a href="" class="py-3 px-3 ">
+            <i class="text-7md icon-social-twitter"></i>
+          </a>
+          <a href="" class="py-3 px-3">
+            <i class="text-7md icon-social-instagram"></i>
+          </a>
+          </div>
+          <div>
+          <p class="rounded-full bg-yellow py-3 px-6 uppercase font-sm w-[288px] my-[56px] mx-auto text-black duration-300 ease-in-out">Sign Up</p>
+          </div>
+        </div>
     <!-- offcanvas-menu end -->
 
   </div>
-</div>
 <!-- offcanvas-mobile-menu end -->
