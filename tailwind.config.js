@@ -203,6 +203,9 @@ module.exports = {
           "@screen xl": {
             flexDirection: "inherit",
           },
+        },
+        ".transform-flip": {
+          transform: "scaleX(-1)"
         }
       });
     },
