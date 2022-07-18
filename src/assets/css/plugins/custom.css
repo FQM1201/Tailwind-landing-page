@@ -19,7 +19,6 @@ body {
 }
 
 .image-mask2 {
-  width: 100%;
   -webkit-mask-image: url('../../images/mask12.svg');
   mask-image: url('../../images/mask12.svg');
   -webkit-mask-size: 120%;
