@@ -1,6 +1,7 @@
 (function ($) {
   "use strict";
 
+  $.Scrollax();
   var $window = $(window),
     $body = $("body");
 
@@ -46,6 +47,7 @@
     $mobileMenuToggle.find("a").removeClass("close");
   });
 
+  
   // Off Canvas Menu
 
   function mobileOffCanvasMenu() {
