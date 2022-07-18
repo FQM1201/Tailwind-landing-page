@@ -29,6 +29,7 @@ module.exports = {
         primary: "#e4dcca", //main color
         yellow: "#F8FDC6", //second primary color
         lime: "#F4F3E9", //third primary color
+        'green-dark': '#B1BFAD',
         sky: {
           200: "#fffaef",
           100: "#effafa",
