@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js overflow-x-hidden" style="overflow-x: hidden" lang="en">
+    
 
 @@include('head.html', {"page": "home", "plugins": ["swiper-bundle.min","magnific-popup"]})
 
@@ -157,10 +158,9 @@
                                             <div class="faq-content text-4sm overflow-hidden font-acumin pt-[16px] lg:pt-[24px] xl:pt-[24px] text-left max-w-3xl lg:max-w-[530px] xl:max-w-[543px]">
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <div class="py-[20px]">
-                                                <audio controls class="w-full">
-                                                    <source src="https://metroui.org.ua/res/hotel_california.mp3" type="audio/mp3">
-                                                    Your browser does not support the audio element.
-                                                </audio>
+                                                    <audio controls class="iru-tiny-player" data-title="Title of podcast">
+                                                    <source src=" https://metroui.org.ua/res/hotel_california.mp3" type="audio/mpeg">
+                                                    </audio>
                                                 </div>
                                             </div>
                                         </div>
@@ -174,12 +174,6 @@
                                             </button>
                                             <div class="faq-content text-4sm overflow-hidden font-acumin pt-[16px] lg:pt-[24px] xl:pt-[24px] text-left hidden max-w-3xl lg:max-w-[530px] xl:max-w-[543px]">
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                                <div class="py-[20px]">
-                                                <audio controls class="w-full">
-                                                    <source src="https://metroui.org.ua/res/hotel_california.mp3" type="audio/mp3">
-                                                    Your browser does not support the audio element.
-                                                </audio>
-                                                </div>
                                             </div>
                                         </div>
                                         <div class="faq py-4 border-t-2 border-solid border-[#00000033]">
@@ -193,9 +187,6 @@
                                             <div class="faq-content text-4sm overflow-hidden font-acumin pt-[16px] lg:pt-[24px] xl:pt-[24px] text-left hidden max-w-3xl lg:max-w-[530px] xl:max-w-[543px]">
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <div class="py-[20px]">
-                                                <audio controls class="w-full">
-                                                    <source src="https://metroui.org.ua/res/hotel_california.mp3" type="audio/mp3">
-                                                    Your browser does not support the audio element.
                                                 </audio>
                                                 </div>
                                             </div>
@@ -688,7 +679,7 @@
 
     @@include('scripts.html', {"page": "home", "plugins":
     ["swiper-bundle.min","popper.min","tippy-bundle.umd.min","jquery.magnific-popup.min","jquery.ajaxchimp.min"]})
-
+    
 
 
 </body>
